@@ -22,6 +22,16 @@ public abstract class Organization {
 	 */
 	public Optional<Position> hire(Name person, String title) {
 		//your code here
+
+		Employee emp = new Employee(ID++, person);
+		//System.out.println(ID);
+		
+		if(root.getDirectReports().contains(title)){
+			System.out.println(1);
+		} else {
+			System.out.println(0);
+		}
+
 		return Optional.empty();
 	}
 
