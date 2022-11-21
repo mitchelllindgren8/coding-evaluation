@@ -5,6 +5,7 @@ import java.util.Optional;
 public abstract class Organization {
 
 	private Position root;
+	private int ID = 1;
 	
 	public Organization() {
 		root = createOrganization();
